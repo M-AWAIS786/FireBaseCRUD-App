@@ -172,7 +172,7 @@ class _HomeScreenState extends State<HomeScreen> {
                           .replaceAll(']', '')
                           .split(',')
                           .join(' ');
-
+                  final actorslength = movies[index].actor.length;
                       return Card(
                         child: Column(
                           mainAxisAlignment: MainAxisAlignment.start,
@@ -182,8 +182,8 @@ class _HomeScreenState extends State<HomeScreen> {
                             Text(
                                 '${movies[index].year} - $genrelistdata - ${movies[index].isrealeased} - ${movies[index].director.name} - ${movies[index].director.age}'),
                             Text(movies[index].description),
-                            Text(movies[index].actor[index].name),
-                            Text(movies[index].actor[index].role),
+                            Text(movies[index].actor[actorslength - 1].name),
+                            Text(movies[index].actor[actorslength - 1].role),
                           ],
                         ),
                       );
