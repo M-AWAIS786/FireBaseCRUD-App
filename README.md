@@ -1,4 +1,4 @@
-# crud_firebase
+# CRUD Firebase with Flutter Dart
 
 A new Flutter project.
 
